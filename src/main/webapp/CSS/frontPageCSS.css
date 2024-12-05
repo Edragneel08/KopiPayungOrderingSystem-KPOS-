@@ -1,0 +1,124 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 13 Jun 2023, 11:10:55 pm
+    Author     : edrag
+*/
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+img#logo {
+    max-width: 200px;
+    height: auto;
+}
+
+body {
+    background-image: url("img/frontBg.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh; /* Set the container height to occupy the full viewport height */
+    transition: 0.5s;
+}
+
+.content {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.catchy-heading {
+    font-size: 4rem;
+    font-weight: bold;
+    animation: pop-in 1s ease-in-out;
+    animation-fill-mode: both;
+}
+
+.catchy-quote {
+    font-size: 2rem;
+    color:black;
+    animation: slide-in 1s ease-in-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+
+.custom-button {
+    width: 250px;
+    height: 50px;
+    background-color: sandybrown;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    animation: fade-in 1s ease-in-out;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+
+.custom-button:hover {
+    background-color: chocolate;
+}
+
+.login-link {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* Keyframe animations */
+@keyframes pop-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
